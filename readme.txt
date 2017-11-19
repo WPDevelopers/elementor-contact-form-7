@@ -3,7 +3,7 @@ Contributors: Codetic, re_enter_rupok, Asif2BD, robicse11128
 Tags: elementor, elements, addons, elementor addon, elementor widget, page builder, builder, visual editor, wordpress page builder
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 2.2.3
+Stable tag: 1.0.0
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -142,7 +142,7 @@ Your existing elements/content will work with premium version. So you won't lose
 - Info Box element added.
 - Flip Box element added.
 - Dual color headline element added.
-- Few minor bug fixes and improvements. 
+- Few minor bug fixes and improvements.
 
 = 1.1.0 =
 

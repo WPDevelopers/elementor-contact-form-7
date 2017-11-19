@@ -26,26 +26,18 @@ require_once EAEL_CONTACT_FORM_7_PATH.'admin/settings.php';
 function add_eael_contact_form_7() {
 
   if ( function_exists( 'wpcf7' ) ) {
-    require_once EAEL_CONTACT_FORM_7_PATH.'contact-form-7.php';
+    require_once EAEL_CONTACT_FORM_7_PATH.'includes/contact-form-7.php';
   }
 
 }
 add_action('elementor/widgets/widgets_registered','add_eael_contact_form_7');
 
-
+/**
+ * Load Eael Contact Form 7 CSS
+ */
 function eael_contact_form_7_enqueue() {
 
    wp_enqueue_style('essential_addons_elementor-css',EAEL_CONTACT_FORM_7_URL.'assets/css/elementor-contact-form-7.css');
 
 }
 add_action( 'wp_enqueue_scripts', 'eael_contact_form_7_enqueue' );
-
-
-// Editor CSS
-
-add_action( 'elementor/editor/before_enqueue_scripts', function() {
-
-   wp_register_style( 'essential_addons_elementor_editor-css', EAEL_CONTACT_FORM_7_URL.'assets/css/essential-addons-editor.css');
-   wp_enqueue_style( 'essential_addons_elementor_editor-css' );
-
-} );

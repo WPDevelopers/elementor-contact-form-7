@@ -10,13 +10,6 @@ class Eael_Contact_Form_7_Admin_Settings {
 	private $is_pro = false;
 
 	/**
-	 * Contains Default Component keys
-	 * @var array
-	 * @since 2.3.0
-	 */
-	public $eael_default_keys = [ 'contact-form-7', 'count-down', 'creative-btn', 'fancy-text', 'img-comparison', 'instagram-gallery', 'interactive-promo',  'lightbox', 'post-block', 'post-grid', 'post-timeline', 'product-grid', 'team-members', 'testimonial-slider', 'testimonials', 'testimonials', 'weforms', 'static-product', 'call-to-action', 'flip-box', 'info-box', 'dual-header', 'price-table', 'flip-carousel', 'interactive-cards', 'ninja-form', 'gravity-form' ];
-
-	/**
 	 * Will Contain All Components Default Values
 	 * @var array
 	 * @since 2.3.0
@@ -60,7 +53,6 @@ class Eael_Contact_Form_7_Admin_Settings {
 
 		if( isset( $_GET['page'] ) && $_GET['page'] == 'eael-contact-form-7-settings' ) {
 			wp_enqueue_style( 'eael-contact-form-7-admin-css', plugins_url( '/', __FILE__ ).'assets/css/admin.css' );
-			wp_enqueue_style( 'font-awesome-css', plugins_url( '/', __FILE__ ).'assets/vendor/font-awesome/css/font-awesome.min.css' );
 			wp_enqueue_style( 'eael-contact-form-7-sweetalert2-css', plugins_url( '/', __FILE__ ).'assets/vendor/sweetalert2/css/sweetalert2.min.css' );
 
 			wp_enqueue_script( 'eael-contact-form-7-admin-js', plugins_url( '/', __FILE__ ).'assets/js/admin.js', array( 'jquery', 'jquery-ui-tabs' ), '1.0', true );
@@ -98,27 +90,9 @@ class Eael_Contact_Form_7_Admin_Settings {
 	 */
 	public function eael_contact_form_7_admin_settings_page() {
 
-		$js_info = array(
-			'ajaxurl' => admin_url( 'admin-ajax.php' )
-		);
-		wp_localize_script( 'essential_addons_elementor-admin-js', 'settings', $js_info );
-
-	   /**
-	    * This section will handle the "eael_save_settings" array. If any new settings options is added
-	    * then it will matches with the older array and then if it founds anything new then it will update the entire array.
-	    */
-	   $this->eael_default_settings = array_fill_keys( $this->eael_default_keys, true );
-	   $this->eael_get_settings = get_option( 'eael_save_settings', $this->eael_default_settings );
-	   $eael_new_settings = array_diff_key( $this->eael_default_settings, $this->eael_get_settings );
-	   if( ! empty( $eael_new_settings ) ) {
-	   	$eael_updated_settings = array_merge( $this->eael_get_settings, $eael_new_settings );
-	   	update_option( 'eael_save_settings', $eael_updated_settings );
-	   }
-	   $this->eael_get_settings = get_option( 'eael_save_settings', $this->eael_default_settings );
 		?>
 		<div class="wrap">
 			<div class="response-wrap"></div>
-		  	<form action="" method="POST" id="eael-settings" name="eael-settings">
 		  		<div class="eael-header-bar">
 					<div class="eael-header-left">
 						<h4 class="title"><?php _e( 'Elementor Contact Form 7', 'elementor-contact-form-7' ); ?></h4>
@@ -506,7 +480,6 @@ class Eael_Contact_Form_7_Admin_Settings {
 				      	</div>
 			    	</div>
 			  	</div>
-		  	</form>
 		</div>
 		<?php
 
