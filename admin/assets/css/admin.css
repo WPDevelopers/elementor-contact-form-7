@@ -1,7 +1,7 @@
 /**
  *=============================================================
- * Essential Addons Elementor Admin Settings Page Styles 
- *============================================================= 
+ * Essential Addons Elementor Admin Settings Page Styles
+ *=============================================================
  */
 
 /* General Style */
@@ -18,25 +18,40 @@
 	-webkit-align-items: center;
 	align-items: center;
 }
+.eael-header-bar-after {
+	height: auto;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid rgba( 0,0,0,0.1 );
+	margin-top: 15px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
 .eael-header-bar .title {
 	font-size: 28px;
 	font-weight: 600;
 	margin: 0px;
 	line-height: 1;
 }
-
-.eael-header-left, 
+.eael-header-bar-after .title-2 {
+	font-size: 24px;
+	font-weight: 600;
+	margin: 0px;
+	line-height: 1;
+}
+.eael-header-left,
 .eael-header-right {
 	-webkit-flex-grow: 1;
 	flex-grow: 1;
 }
-.eael-header-right {
-	text-align: right;
+.eael-header-bar-after .eael-header-right {
+	text-align: left;
 }
 .eael-settings-tabs {
 	padding-top: 15px;
 }
-
 .eael-settings-tab h4 {
 	font-size: 22px;
 }
@@ -101,7 +116,7 @@ textarea.eael-form-control {
 	font-size: 14px;
 	font-weight: 600;
 	color: #5d5d5d;
-} 
+}
 .row {
 	width: 100%;
 	height: auto;
