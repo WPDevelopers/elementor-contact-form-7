@@ -58,15 +58,14 @@ class Eael_Contact_Form_7_Admin_Settings {
 	 */
 	public function enqueue_eael_admin_scripts() {
 
-		if( isset( $_GET['page'] ) && $_GET['page'] == 'eael-settings' ) {
-			wp_enqueue_style( 'essential_addons_elementor-admin-css', plugins_url( '/', __FILE__ ).'assets/css/admin.css' );
+		if( isset( $_GET['page'] ) && $_GET['page'] == 'eael-contact-form-7-settings' ) {
+			wp_enqueue_style( 'eael-contact-form-7-admin-css', plugins_url( '/', __FILE__ ).'assets/css/admin.css' );
 			wp_enqueue_style( 'font-awesome-css', plugins_url( '/', __FILE__ ).'assets/vendor/font-awesome/css/font-awesome.min.css' );
-			wp_enqueue_style( 'essential_addons_elementor-sweetalert2-css', plugins_url( '/', __FILE__ ).'assets/vendor/sweetalert2/css/sweetalert2.min.css' );
+			wp_enqueue_style( 'eael-contact-form-7-sweetalert2-css', plugins_url( '/', __FILE__ ).'assets/vendor/sweetalert2/css/sweetalert2.min.css' );
 
-			// wp_enqueue_script( "jquery-ui-tabs" );
-			wp_enqueue_script( 'essential_addons_elementor-admin-js', plugins_url( '/', __FILE__ ).'assets/js/admin.js', array( 'jquery', 'jquery-ui-tabs' ), '1.0', true );
-			wp_enqueue_script( 'essential_addons_core-js', plugins_url( '/', __FILE__ ).'assets/vendor/sweetalert2/js/core.js', array( 'jquery' ), '1.0', true );
-			wp_enqueue_script( 'essential_addons_sweetalert2-js', plugins_url( '/', __FILE__ ).'assets/vendor/sweetalert2/js/sweetalert2.min.js', array( 'jquery', 'essential_addons_core-js' ), '1.0', true );
+			wp_enqueue_script( 'eael-contact-form-7-admin-js', plugins_url( '/', __FILE__ ).'assets/js/admin.js', array( 'jquery', 'jquery-ui-tabs' ), '1.0', true );
+			wp_enqueue_script( 'eael-contact-form-7-core-js', plugins_url( '/', __FILE__ ).'assets/vendor/sweetalert2/js/core.js', array( 'jquery' ), '1.0', true );
+			wp_enqueue_script( 'eael-contact-form-7-sweetalert2-js', plugins_url( '/', __FILE__ ).'assets/vendor/sweetalert2/js/sweetalert2.min.js', array( 'jquery', 'eael-contact-form-7-core-js' ), '1.0', true );
 		}
 
 	}

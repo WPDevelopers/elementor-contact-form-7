@@ -46,8 +46,11 @@
 	-webkit-flex-grow: 1;
 	flex-grow: 1;
 }
+.eael-header-right {
+	text-align: right;
+}
 .eael-header-bar-after .eael-header-right {
-	text-align: left;
+	text-align: right;
 }
 .eael-settings-tabs {
 	padding-top: 15px;

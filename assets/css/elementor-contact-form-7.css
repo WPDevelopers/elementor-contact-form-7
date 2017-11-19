@@ -1,0 +1,59 @@
+/**
+ * Contact Form 7 Style
+ */
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+.eael-contact-form-align-right .eael-contact-form-container,
+.eael-contact-form-btn-align-right .eael-contact-form-container input.wpcf7-submit {
+    float: right;
+    width: auto;
+}
+.eael-contact-form-container textarea,
+.eael-contact-form-container input[type="text"],
+.eael-contact-form-container input[type="password"],
+.eael-contact-form-container input[type="datetime"],
+.eael-contact-form-container input[type="datetime-local"],
+.eael-contact-form-container input[type="date"],
+.eael-contact-form-container input[type="month"],
+.eael-contact-form-container input[type="time"],
+.eael-contact-form-container input[type="week"],
+.eael-contact-form-container input[type="number"],
+.eael-contact-form-container input[type="email"],
+.eael-contact-form-container input[type="url"],
+.eael-contact-form-container input[type="search"],
+.eael-contact-form-container input[type="tel"],
+.eael-contact-form-container input[type="color"],
+.eael-contact-form-container .uneditable-input {
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+.eael-contact-form-container .wpcf7-form::before,
+.eael-contact-form-container .wpcf7-form::after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+.eael-contact-form-container .wpcf7-response-output {
+    clear: both;
+}
+.eael-contact-form-container input,
+.eael-contact-form-container textarea {
+    height: auto;
+    padding: 10px;
+}
+.eael-contact-form-align-center .eael-contact-form-container,
+.eael-contact-form-btn-align-center .eael-contact-form-container input.wpcf7-submit {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+    float: none;
+}
+.eael-contact-form-align-left .eael-contact-form-container,
+.eael-contact-form-btn-align-left .eael-contact-form-container input.wpcf7-submit {
+    float: left;
+    width: auto;
+}
