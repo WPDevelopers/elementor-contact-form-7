@@ -104,7 +104,7 @@ class Eael_Contact_Form_7_Admin_Settings {
 						<p class="eael-subtitle-text"><?php _e( 'You can enable certain elements that you are only using. So it will not slow down your site since it won\'t load the associated resources', 'elementor-contact-form-7' ); ?></p>
 					</div>
 					<div class="eael-header-right">
-						<a href="https://essential-addons.com/elementor/" target="_blank" class="button eael-btn">Install Now</a>
+						<button class="button eael-btn" id="eael-cf-7-install-now">Install Now</button>
 					</div>
 				</div>
 			  	<div class="eael-settings-tabs">

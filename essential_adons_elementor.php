@@ -20,6 +20,9 @@ require_once EAEL_CONTACT_FORM_7_PATH.'includes/elementor-helper.php';
 require_once EAEL_CONTACT_FORM_7_PATH.'includes/queries.php';
 require_once EAEL_CONTACT_FORM_7_PATH.'admin/settings.php';
 
+// Upsell
+include_once dirname( __FILE__ ) . '/includes/eael-cf7-upsell.php';
+new Eael_Upsell('');
 /**
  * Load Elementor Contact Form 7
  */
