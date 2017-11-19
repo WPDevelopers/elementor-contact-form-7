@@ -83,7 +83,7 @@ class Eael_Contact_Form_7_Admin_Settings {
 			'Elementor Contact Form 7',
 			'Elementor Contact Form 7',
 			'manage_options',
-			'eael-settings',
+			'eael-contact-form-7-settings',
 			array( $this, 'eael_contact_form_7_admin_settings_page' ),
 			plugins_url( '/', __FILE__ ).'/assets/images/ea-icon.png',
 			199
