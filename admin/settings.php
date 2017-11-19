@@ -127,6 +127,7 @@ class Eael_Contact_Form_7_Admin_Settings {
 				<div class="eael-header-bar-after">
 					<div class="eael-header-left">
 						<h4 class="title-2"><?php _e( 'Install all elements in a single plugin!', 'elementor-contact-form-7' ); ?></h4>
+						<p class="eael-subtitle-text"><?php _e( 'You can enable certain elements that you are only using. So it will not slow down your site since it won\'t load the associated resources', 'elementor-contact-form-7' ); ?></p>
 					</div>
 					<div class="eael-header-right">
 						<a href="https://essential-addons.com/elementor/" target="_blank" class="button eael-btn">Install Now</a>
