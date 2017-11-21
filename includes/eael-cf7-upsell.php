@@ -23,7 +23,7 @@ class Eael_Upsell {
      */
     public function init_hooks() {
 
-        if ( function_exists( 'eael_activate' ) ) {
+        if ( function_exists( 'eael_activate' ) && function_exists( 'wpcf7' ) ) {
             return;
         }
 
@@ -34,6 +34,7 @@ class Eael_Upsell {
         add_action( 'admin_notices', array( $this, 'activation_notice' ) );
 
         add_action( 'wp_ajax_eael_upsell_installer', array( $this, 'install_eael' ) );
+        add_action( 'wp_ajax_eael_cf7_installer', array( $this, 'install_eael_cf7' ) );
     }
     /**
      * Show the plugin installation notice
@@ -62,6 +63,34 @@ class Eael_Upsell {
                         success: function(response) {
                             self.text('<?php echo esc_js( 'Installed' ); ?>');
                             window.location.href = '<?php echo admin_url( 'admin.php?page=eael-settings' ); ?>';
+                        },
+                        error: function(error) {
+                            self.removeClass('install-now updating-message');
+                            alert( error );
+                        },
+                        complete: function() {
+                            self.attr('disabled', 'disabled');
+                            self.removeClass('install-now updating-message');
+                        }
+                    });
+                });
+                /* Install Contact Form 7 [ if not exists ] */
+                $('#eael-install-cf7').on('click', function (e) {
+                    var self = $(this);
+                    e.preventDefault();
+                    self.addClass('install-now updating-message');
+                    self.text('<?php echo esc_js( 'Installing...' ); ?>');
+
+                    $.ajax({
+                        url: '<?php echo admin_url( 'admin-ajax.php' ); ?>',
+                        type: 'post',
+                        data: {
+                            action: 'eael_cf7_installer',
+                            _wpnonce: '<?php echo wp_create_nonce('eael_cf7_installer'); ?>'
+                        },
+                        success: function(response) {
+                            self.text('<?php echo esc_js( 'Installed' ); ?>');
+                            window.location.href = '<?php echo admin_url( 'plugins.php' ); ?>';
                         },
                         error: function(error) {
                             self.removeClass('install-now updating-message');
@@ -142,5 +171,55 @@ class Eael_Upsell {
         return activate_plugin( $plugin_basename );
     }
 
+
+    /**
+     * Install eael cf7
+     *
+     * @return void
+     */
+    public function install_eael_cf7() {
+        check_ajax_referer( 'eael_cf7_installer' );
+
+        if ( ! current_user_can( 'manage_options' ) ) {
+            wp_send_json_error( __( 'You don\'t have permission to install the plugins' ) );
+        }
+
+        $eael_status = $this->install_eael_cf7_plugin( 'contact-form-7', 'wp-contact-form-7.php' );
+        $this->fail_on_error( $eael_status );
+
+        wp_send_json_success();
+    }
+
+    /**
+     * Install and activate cf7 plugin
+     *
+     * @param  string $slug
+     * @param  string $file
+     *
+     * @return WP_Error|null
+     */
+    public function install_eael_cf7_plugin( $slug, $file ) {
+        include_once ABSPATH . 'wp-admin/includes/plugin-install.php';
+        include_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
+
+        $plugin_basename = $slug . '/' . $file;
+
+        // if exists and not activated
+        if ( file_exists( WP_PLUGIN_DIR . '/' . $plugin_basename ) ) {
+            return activate_plugin( $plugin_basename );
+        }
+
+        // seems like the plugin doesn't exists. Download and activate it
+        $upgrader = new Plugin_Upgrader( new WP_Ajax_Upgrader_Skin() );
+
+        $api      = plugins_api( 'plugin_information', array( 'slug' => $slug, 'fields' => array( 'sections' => false ) ) );
+        $result   = $upgrader->install( $api->download_link );
+
+        if ( is_wp_error( $result ) ) {
+            return $result;
+        }
+
+        return activate_plugin( $plugin_basename );
+    }
 }
 endif;

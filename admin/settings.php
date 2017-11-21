@@ -98,6 +98,7 @@ class Eael_Contact_Form_7_Admin_Settings {
 						<h4 class="title"><?php _e( 'Elementor Contact Form 7', 'elementor-contact-form-7' ); ?></h4>
 					</div>
 				</div>
+				<?php if( !function_exists( 'eael_activate' ) ): ?>
 				<div class="eael-header-bar-after">
 					<div class="eael-header-left">
 						<h4 class="title-2"><?php _e( 'Install all elements in a single plugin!', 'elementor-contact-form-7' ); ?></h4>
@@ -107,6 +108,7 @@ class Eael_Contact_Form_7_Admin_Settings {
 						<button class="button eael-btn" id="eael-cf-7-install-now">Install Now</button>
 					</div>
 				</div>
+				<?php endif; ?>
 			  	<div class="eael-settings-tabs">
 			    	<div id="elements" class="eael-settings-tab">
 				      	<div class="row">
