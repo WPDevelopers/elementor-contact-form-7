@@ -53,14 +53,7 @@ function eael_contact_from_7_admin_notice() {
 	if( !function_exists( 'wpcf7' ) ) :
 	?>
 		<div class="error notice is-dismissible">
-			<p><strong>Contact Form 7 plugin is missing.</strong> Please install the plugin now! <button id="eael-install-cf7" class="button">Install Now!</button></p>
-		</div>
-	<?php
-	endif;
-	if( function_exists( 'eael_activate' ) ) :
-	?>
-		<div class="error notice is-dismissible">
-			<p><strong>Essential Addons Elementor is already installed.</strong> You can now <a href="<?php echo admin_url().'plugins.php' ?>">deactivate</a> <strong>Elementor Contact Form 7</strong>.</p>
+			<p><strong>Contact Form 7 plugin is missing.</strong> Please install the plugin now! <button id="eael-install-cf7" class="button button-primary">Install Now!</button></p>
 		</div>
 	<?php
 	endif;

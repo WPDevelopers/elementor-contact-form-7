@@ -2,10 +2,10 @@
 	'use strict';
 	$( '.eael-get-pro' ).on( 'click', function() {
 		swal({
-	  		title: '<h2><span>Go</span> Premium',
+	  		title: '<h2>Install all elements in a single plugin!</h2>',
 	  		type: 'warning',
 	  		html:
-	    		'Purchase our <b><a href="https://essential-addons.com/elementor/buy.php" rel="nofollow">premium version</a></b> to unlock these pro components!',
+	    		'<b><a href="https://wordpress.org/plugins/essential-addons-for-elementor-lite/" rel="nofollow" target="_blank">Download</a></b> it from WordPress.org for free!',
 	  		showCloseButton: true,
 	  		showCancelButton: false,
 	  		focusConfirm: true,

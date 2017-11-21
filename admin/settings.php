@@ -108,6 +108,10 @@ class Eael_Contact_Form_7_Admin_Settings {
 						<button class="button eael-btn" id="eael-cf-7-install-now">Install Now</button>
 					</div>
 				</div>
+				<?php else: ?>
+				<div class="error notice is-dismissible">
+					<p><strong>Essential Addons Elementor is already installed.</strong> You can now <a href="<?php echo admin_url().'plugins.php' ?>">deactivate</a> <strong>Elementor Contact Form 7</strong>.</p>
+				</div>
 				<?php endif; ?>
 			  	<div class="eael-settings-tabs">
 			    	<div id="elements" class="eael-settings-tab">
