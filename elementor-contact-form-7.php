@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Elementor Contact Form 7
- * Description: The ultimate elements library for Elementor page builder plugin for WordPress.
- * Plugin URI: https://essential-addons.com/elementor/
- * Author: Codetic
+ * Description: Contact Form 7 styler for elementor. Design the form visually with elementor.
+ * Plugin URI: https://essential-addons.com/elementor/contact-form-7
+ * Author: Essential Addons
  * Version: 1.0.0
- * Author URI: http://www.codetic.net
+ * Author URI: https://essential-addons.com/elementor/
  *
  * Text Domain: elementor-contact-form-7
 */

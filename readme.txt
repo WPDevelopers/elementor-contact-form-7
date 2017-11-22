@@ -1,33 +1,30 @@
-=== Elementor Essential Addons ===
-Contributors: Codetic, re_enter_rupok, Asif2BD, robicse11128
-Tags: elementor, elements, addons, elementor addon, elementor widget, page builder, builder, visual editor, wordpress page builder
+=== Elementor Contact Form 7 ===
+Contributors: re_enter_rupok, Asif2BD, robicse11128, codetic
+Tags: elementor, contact form 7, contact form 7 styler, elementor addon, elementor widget
 Requires at least: 4.0
 Tested up to: 4.9
 Stable tag: 1.0.0
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
-Ultimate elements library for Elementor WordPress Page Builder. Premium elements with endless customization options.
+Contact Form 7 styler for Elementor page builder.
 
 == Description ==
 
-Ultimate elements  library for Elementor WordPress Page Builder. Lots of useful and premium elements to complete your website quickly. Stunning design and neat and clean code. Option to enable/disable certain elements to improve page loading. No extra resources to slow down your website.
+Contact Form 7 styler for Elementor page builder. Desing beatiful Contact Form using Elementor and Contact Form 7 with visual editor. No coding required.
 
 
-[Check the Demos](https://essential-addons.com/elementor/)
+[Check the Demo](https://essential-addons.com/elementor/contact-form-7)
 
-### [Elementor](https://wordpress.org/plugins/elementor/) page builder is required for this plugin.
+### [Elementor](https://wordpress.org/plugins/elementor/) page builder and [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) are required for this plugin.
 
 ### Features
 
-* 17+ Stunning Elements (Free)
-* Fully Customizable
-* Unlimited Design Options
-* Elements Control option
-* Lightweight and Fast
-* Extra-ordinary support
+* Pick the form within Elementor page builder
+* Set layout and styles using visual builder
 
-### Available Elements
+
+### This is the standalone version for Contact Form 7 only. You can use [Essential Addons for Elementor](https://wordpress.org/plugins/essential-addons-for-elementor-lite/) to get 25+ elements together. 
 
 * [Post Grid](https://essential-addons.com/elementor/post-grid/)
 * [Post Timeline](https://essential-addons.com/elementor/post-timeline/)
@@ -46,11 +43,6 @@ Ultimate elements  library for Elementor WordPress Page Builder. Lots of useful 
 * [Dual Color Headline](https://essential-addons.com/elementor/dual-color-headline/)
 * [Call to Action](https://essential-addons.com/elementor/call-to-action/)
 * [Pricing Table](https://essential-addons.com/elementor/pricing-table/)
-
-
-
-### More elements on [Premium Version](https://essential-addons.com/elementor/buy.php)
-
 * [Post Block (Flex)](https://essential-addons.com/elementor/post-block/)
 * [Lightbox & Modal](https://essential-addons.com/elementor/lightbox-modal/)
 * [Testimonial Slider](https://essential-addons.com/elementor/testimonial-slider/)
@@ -62,8 +54,6 @@ Ultimate elements  library for Elementor WordPress Page Builder. Lots of useful 
 * [Interactive Cards](https://essential-addons.com/elementor/interactive-cards/)
 * [Content Timeline](https://essential-addons.com/elementor/content-timeline/)
 
-
-More coming soon (weekly update) ...
 
 == Installation ==
 
@@ -81,13 +71,14 @@ Note : This plugin works with Elementor. Make sure you have [Elementor](https://
 
 No. You cannot use without Elementor since it's an addon for Elementor.
 
+= Can I use the plugin without Contact Form 7? =
+
+No. You cannot use without Contact Form 7. It must be installed.
+
 = Does it work with any theme? =
 
-Absolutely! It will work with any theme where Elementor works.
+Absolutely! It will work with any theme where Elementor and Contact Form 7 works.
 
-= What if I update to Premium version? =
-
-Your existing elements/content will work with premium version. So you won't lose your developed contents.
 
 == Screenshots ==
 
@@ -95,75 +86,9 @@ Your existing elements/content will work with premium version. So you won't lose
 
 == Changelog ==
 
-= 2.2.3 =
-
-- Gravity Forms element added
-- Post Grid and Post Timeline load more improved
-- Load more functionality added for pages and any custom post types
-- Custom CSS/JS options removed from options panel
-- Few minor improvements
-
-= 2.2.2 =
-
-- Ninja Forms element added
-- Load more functionality added to Post elements (Post Grid & Post Timeline)
-- Few presets added for Team Members, Countdown, Fancy Text
-- Few minor improvements
-
-
-= 2.2.1 =
-
-- (Clear cache after update)
-
-- Several improvements for CTA, Info Box, Flip box and dual heading elements
-- Call to action width control and button control added
-- Pricing table options improved
-- Admin page improved and optimized
-
-
-
-= 2.2.0 =
-
-- Pricing Table Element added
-- Flipbox element animation improved and more options added
-- Post Timeline responsiveness improved
-- Few minor improvements
-
-= 2.1 =
-
-- More options added to CTA and Info Box elements
-- Flip box animation improved
-- Options panel improved and community support links added
-
-= 2.0 =
-
-- Options Panel added
-- Elements control added. Now you can enable/disable certain elements.
-- Info Box element added.
-- Flip Box element added.
-- Dual color headline element added.
-- Few minor bug fixes and improvements.
-
-= 1.1.0 =
-
-- Post Grid (Masonry) element added
-- Few minor improvement
-
-
-= 1.0.1 =
-
-- Element added for weForms (https://wordpress.org/plugins/weforms/)
-
 = 1.0.0 =
 
 Initial stable realese
 
 
 == Upgrade Notice ==
-
-= 2.2.2 =
-
-- Ninja Forms element added
-- Load more functionality added to Post elements (Post Grid & Post Timeline)
-- Few presets added for Team Members, Countdown, Fancy Text
-- Few minor improvements
