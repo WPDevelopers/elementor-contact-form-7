@@ -27,7 +27,8 @@
 	margin-bottom: 10px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: space-between;
+	align-items: center;
 }
 .eael-header-bar .title {
 	font-size: 28px;
@@ -41,10 +42,8 @@
 	margin: 0px;
 	line-height: 1;
 }
-.eael-header-left,
-.eael-header-right {
-	-webkit-flex-grow: 1;
-	flex-grow: 1;
+.eael-header-left, .eael-header-right {
+	flex: 1 1 0;
 }
 .eael-header-right {
 	text-align: right;
@@ -223,7 +222,7 @@ textarea.eael-form-control {
 .button.eael-btn {
 	background-color: #0099CC;
 	color: #fff;
-	padding: 6px 20px;
+	padding: 15px 20px;
 	border: none;
 	box-shadow: none;
 	font-size: 14px;
@@ -231,6 +230,9 @@ textarea.eael-form-control {
 	text-transform: uppercase;
 	text-shadow: none;
 	letter-spacing: .05em;
+	white-space: inherit;
+	min-width: 250px;
+	line-height: 1.5;
 }
 
 .button.eael-btn:hover, .button.eael-btn:focus {

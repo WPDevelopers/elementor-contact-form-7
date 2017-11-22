@@ -53,7 +53,7 @@ function eael_contact_from_7_admin_notice() {
 	if( !function_exists( 'wpcf7' ) ) :
 	?>
 		<div class="error notice is-dismissible">
-			<p><strong>Contact Form 7 plugin is missing.</strong> Please install the plugin now! <button id="eael-install-cf7" class="button button-primary">Install Now!</button></p>
+			<p><strong>Elementor Contact Form 7 styler</strong> needs <strong>Contact Form 7</strong> plugin to be installed. Please install the plugin now! <button id="eael-install-cf7" class="button button-primary">Install Now!</button></p>
 		</div>
 	<?php
 	endif;

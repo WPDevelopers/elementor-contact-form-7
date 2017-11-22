@@ -101,16 +101,16 @@ class Eael_Contact_Form_7_Admin_Settings {
 				<?php if( !function_exists( 'eael_activate' ) ): ?>
 				<div class="eael-header-bar-after">
 					<div class="eael-header-left">
-						<h4 class="title-2"><?php _e( 'Install all elements in a single plugin!', 'elementor-contact-form-7' ); ?></h4>
+						<h4 class="title-2"><?php _e( 'Get all essential elements in a single plugin!', 'elementor-contact-form-7' ); ?></h4>
 						<p class="eael-subtitle-text"><?php _e( 'You can enable certain elements that you are only using. So it will not slow down your site since it won\'t load the associated resources', 'elementor-contact-form-7' ); ?></p>
 					</div>
 					<div class="eael-header-right">
-						<button class="button eael-btn" id="eael-cf-7-install-now">Install Now</button>
+						<button class="button eael-btn" id="eael-cf-7-install-now">Install Essential Addons for Elementor</button>
 					</div>
 				</div>
 				<?php else: ?>
 				<div class="error notice is-dismissible">
-					<p><strong>Essential Addons Elementor is already installed.</strong> You can now <a href="<?php echo admin_url().'plugins.php' ?>">deactivate</a> <strong>Elementor Contact Form 7</strong>.</p>
+					<p>Looks like you have <strong>Essential Addons for Elementor</strong> installed.</strong> You can <a href="<?php echo admin_url().'plugins.php' ?>">deactivate</a> <strong>Elementor Contact Form 7</strong> and use Essential Addons.</p>
 				</div>
 				<?php endif; ?>
 			  	<div class="eael-settings-tabs">
