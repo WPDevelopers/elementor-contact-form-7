@@ -41,7 +41,7 @@ add_action('elementor/widgets/widgets_registered','add_eael_contact_form_7');
  */
 function eael_contact_form_7_enqueue() {
 
-   wp_enqueue_style('essential_addons_elementor-css',EAEL_CONTACT_FORM_7_URL.'assets/css/elementor-contact-form-7.css');
+   wp_enqueue_style('essential_addons_elementor-cf7-css',EAEL_CONTACT_FORM_7_URL.'assets/css/elementor-contact-form-7.css');
 
 }
 add_action( 'wp_enqueue_scripts', 'eael_contact_form_7_enqueue' );

@@ -33,7 +33,7 @@ class Eael_Upsell {
 
         add_action( 'admin_notices', array( $this, 'activation_notice' ) );
 
-        add_action( 'wp_ajax_eael_upsell_installer', array( $this, 'install_eael' ) );
+        add_action( 'wp_ajax_eael_cf7_upsell_installer', array( $this, 'install_eael' ) );
         add_action( 'wp_ajax_eael_cf7_installer', array( $this, 'install_eael_cf7' ) );
     }
     /**
@@ -57,8 +57,8 @@ class Eael_Upsell {
                         url: '<?php echo admin_url( 'admin-ajax.php' ); ?>',
                         type: 'post',
                         data: {
-                            action: 'eael_upsell_installer',
-                            _wpnonce: '<?php echo wp_create_nonce('eael_upsell_installer'); ?>'
+                            action: 'eael_cf7_upsell_installer',
+                            _wpnonce: '<?php echo wp_create_nonce('eael_cf7_upsell_installer'); ?>'
                         },
                         success: function(response) {
                             self.text('<?php echo esc_js( 'Installed' ); ?>');
@@ -127,7 +127,7 @@ class Eael_Upsell {
      * @return void
      */
     public function install_eael() {
-        check_ajax_referer( 'eael_upsell_installer' );
+        check_ajax_referer( 'eael_cf7_upsell_installer' );
 
         if ( ! current_user_can( 'manage_options' ) ) {
             wp_send_json_error( __( 'You don\'t have permission to install the plugins' ) );
