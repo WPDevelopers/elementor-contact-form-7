@@ -82,7 +82,12 @@ Absolutely! It will work with any theme where Elementor and Contact Form 7 works
 
 == Screenshots ==
 
-
+1. Example Forms
+2. Select Forms
+3. Style Form container
+4. Style Form fields 
+5. Set Color & Typography
+6. Style submit button
 
 == Changelog ==
 
