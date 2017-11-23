@@ -1,4 +1,4 @@
-=== Elementor Contact Form 7 ===
+=== Contact Form 7 styler for Elementor Page Builder ===
 Contributors: re_enter_rupok, Asif2BD, robicse11128, codetic
 Tags: elementor, contact form 7, contact form 7 styler, elementor addon, elementor widget
 Requires at least: 4.0
@@ -7,7 +7,7 @@ Stable tag: 1.0.0
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
-Contact Form 7 styler for Elementor page builder.
+Style your Contact Form 7 forms right from the Elementor visual editor.
 
 == Description ==
 

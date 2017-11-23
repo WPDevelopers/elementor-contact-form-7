@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Elementor Contact Form 7
- * Description: Contact Form 7 styler for elementor. Design the form visually with elementor.
+ * Plugin Name: Contact Form 7 styler for Elementor
+ * Description: Style your Contact Form 7 forms right from the Elementor visual editor.
  * Plugin URI: https://essential-addons.com/elementor/contact-form-7
  * Author: Essential Addons
  * Version: 1.0.0
